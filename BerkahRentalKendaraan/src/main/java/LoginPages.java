@@ -14,6 +14,9 @@ public class LoginPages extends javax.swing.JFrame {
      */
     public LoginPages() {
         initComponents();
+        txt1.setBackground(new java.awt.Color(0,0,0,1));
+          txt2.setBackground(new java.awt.Color(0,0,0,1));
+        txt3.setBackground(new java.awt.Color(0,0,0,1));
     }
 
     /**
@@ -26,9 +29,10 @@ public class LoginPages extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        btn1 = new javax.swing.JButton();
+        txt1 = new javax.swing.JTextField();
+        txt3 = new javax.swing.JTextField();
+        txt2 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -36,40 +40,39 @@ public class LoginPages extends javax.swing.JFrame {
         jPanel1.setToolTipText("");
         jPanel1.setLayout(null);
 
-        jButton1.setBackground(new java.awt.Color(245, 155, 18));
-        jButton1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(77, 49, 6));
-        jButton1.setText("GET STARTED");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btn1.setBackground(new java.awt.Color(245, 155, 18));
+        btn1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        btn1.setForeground(new java.awt.Color(77, 49, 6));
+        btn1.setText("GET STARTED");
+        btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btn1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1);
-        jButton1.setBounds(430, 360, 121, 33);
+        jPanel1.add(btn1);
+        btn1.setBounds(300, 280, 150, 50);
 
-        jTextField1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(245, 155, 18));
-        jTextField1.setText("Berkah Rent");
-        jTextField1.setBorder(null);
-        jPanel1.add(jTextField1);
-        jTextField1.setBounds(60, 150, 140, 24);
+        txt1.setFont(new java.awt.Font("Serif", 1, 48)); // NOI18N
+        txt1.setText("Berkah");
+        txt1.setBorder(null);
+        jPanel1.add(txt1);
+        txt1.setBounds(40, 40, 180, 50);
 
-        jTextField2.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(77, 49, 6));
-        jTextField2.setText("rent the vehicle of your dream with home delivery");
-        jTextField2.setBorder(null);
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jTextField2);
-        jTextField2.setBounds(60, 180, 330, 30);
+        txt3.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
+        txt3.setText("best vehicle for your trip");
+        txt3.setBorder(null);
+        jPanel1.add(txt3);
+        txt3.setBounds(50, 130, 280, 32);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\fully exposed carbon fiber mclaren embraces 3D printing as new reality in exotic car design.png")); // NOI18N
+        txt2.setFont(new java.awt.Font("Serif", 1, 48)); // NOI18N
+        txt2.setText("Rent");
+        txt2.setBorder(null);
+        jPanel1.add(txt2);
+        txt2.setBounds(40, 90, 140, 40);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\GET STARTED (2).png")); // NOI18N
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 600, 410);
+        jLabel1.setBounds(0, 0, 450, 500);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -91,13 +94,9 @@ public class LoginPages extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_btn1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -135,10 +134,11 @@ public class LoginPages extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btn1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField txt1;
+    private javax.swing.JTextField txt2;
+    private javax.swing.JTextField txt3;
     // End of variables declaration//GEN-END:variables
 }
