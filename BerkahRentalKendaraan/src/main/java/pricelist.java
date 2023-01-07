@@ -138,94 +138,95 @@ public class pricelist extends javax.swing.JFrame {
         lbl3.setBackground(new java.awt.Color(204, 204, 204));
         lbl3.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         lbl3.setForeground(new java.awt.Color(204, 204, 204));
+        lbl3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl3.setText("BERKAH RENTAL");
         jPanel1.add(lbl3);
-        lbl3.setBounds(80, 28, 130, 19);
+        lbl3.setBounds(230, 30, 150, 40);
 
         lbl13.setFont(new java.awt.Font("Sitka Text", 1, 28)); // NOI18N
         lbl13.setForeground(new java.awt.Color(255, 191, 0));
         lbl13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl13.setText("PRICE LIST");
         jPanel1.add(lbl13);
-        lbl13.setBounds(40, 53, 204, 36);
+        lbl13.setBounds(200, 60, 220, 50);
 
-        lblmanual1.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        lblmanual1.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         lblmanual1.setForeground(new java.awt.Color(255, 191, 0));
         lblmanual1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblmanual1.setText("Manual");
         jPanel1.add(lblmanual1);
-        lblmanual1.setBounds(40, 110, 74, 19);
+        lblmanual1.setBounds(100, 120, 100, 32);
 
-        lbl14.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        lbl14.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         lbl14.setForeground(new java.awt.Color(255, 191, 0));
         lbl14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl14.setText("Matic");
         jPanel1.add(lbl14);
-        lbl14.setBounds(190, 110, 74, 19);
+        lbl14.setBounds(400, 130, 74, 19);
 
         lbl15.setBackground(new java.awt.Color(204, 204, 204));
-        lbl15.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
+        lbl15.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         lbl15.setForeground(new java.awt.Color(204, 204, 204));
         lbl15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl15.setText("12 Hours : Rp 500.000 ");
         jPanel1.add(lbl15);
-        lbl15.setBounds(20, 140, 120, 16);
+        lbl15.setBounds(60, 180, 190, 20);
 
         lbl16.setBackground(new java.awt.Color(204, 204, 204));
-        lbl16.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        lbl16.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         lbl16.setForeground(new java.awt.Color(204, 204, 204));
         lbl16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl16.setText("12 Hours : Rp 600.000 ");
         jPanel1.add(lbl16);
-        lbl16.setBounds(160, 140, 130, 20);
+        lbl16.setBounds(350, 180, 200, 20);
 
         lbl17.setBackground(new java.awt.Color(204, 204, 204));
-        lbl17.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        lbl17.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         lbl17.setForeground(new java.awt.Color(204, 204, 204));
         lbl17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl17.setText("1 Day : Rp 900.000 ");
         jPanel1.add(lbl17);
-        lbl17.setBounds(20, 180, 120, 16);
+        lbl17.setBounds(70, 220, 170, 20);
 
         lbl18.setBackground(new java.awt.Color(204, 204, 204));
-        lbl18.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        lbl18.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         lbl18.setForeground(new java.awt.Color(204, 204, 204));
         lbl18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl18.setText("1 Day : Rp 1.000.000 ");
         jPanel1.add(lbl18);
-        lbl18.setBounds(160, 180, 120, 16);
+        lbl18.setBounds(350, 220, 190, 24);
 
         lbl19.setBackground(new java.awt.Color(204, 204, 204));
-        lbl19.setFont(new java.awt.Font("Dialog", 0, 11)); // NOI18N
+        lbl19.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         lbl19.setForeground(new java.awt.Color(204, 204, 204));
         lbl19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl19.setText("2 Day : Rp 1.500.000 ");
         jPanel1.add(lbl19);
-        lbl19.setBounds(20, 220, 120, 16);
+        lbl19.setBounds(70, 260, 180, 20);
 
         lbl20.setBackground(new java.awt.Color(204, 204, 204));
-        lbl20.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        lbl20.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         lbl20.setForeground(new java.awt.Color(204, 204, 204));
         lbl20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl20.setText("2 Day : Rp 1.600.000 ");
         jPanel1.add(lbl20);
-        lbl20.setBounds(160, 220, 120, 16);
+        lbl20.setBounds(350, 260, 190, 30);
 
         lbl21.setBackground(new java.awt.Color(204, 204, 204));
-        lbl21.setFont(new java.awt.Font("Dialog", 0, 11)); // NOI18N
+        lbl21.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         lbl21.setForeground(new java.awt.Color(204, 204, 204));
         lbl21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl21.setText("3 Day : Rp 2.250.000 ");
         jPanel1.add(lbl21);
-        lbl21.setBounds(20, 260, 120, 16);
+        lbl21.setBounds(70, 300, 180, 16);
 
         lbl22.setBackground(new java.awt.Color(204, 204, 204));
-        lbl22.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        lbl22.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         lbl22.setForeground(new java.awt.Color(204, 204, 204));
         lbl22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl22.setText("3 Day : Rp 2.350.000 ");
         jPanel1.add(lbl22);
-        lbl22.setBounds(160, 260, 120, 16);
+        lbl22.setBounds(360, 310, 180, 24);
 
         nextButton1.setBackground(new java.awt.Color(80, 79, 79));
         nextButton1.setForeground(new java.awt.Color(255, 191, 0));
@@ -236,21 +237,23 @@ public class pricelist extends javax.swing.JFrame {
             }
         });
         jPanel1.add(nextButton1);
-        nextButton1.setBounds(190, 340, 80, 30);
+        nextButton1.setBounds(240, 440, 120, 40);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (9).png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (12).png")); // NOI18N
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 300, 450);
+        jLabel1.setBounds(0, 0, 600, 510);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 6, Short.MAX_VALUE))
         );
 
         pack();

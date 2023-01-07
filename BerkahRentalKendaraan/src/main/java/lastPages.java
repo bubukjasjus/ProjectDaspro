@@ -44,34 +44,34 @@ public class lastPages extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("PAYMENT");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(70, 90, 165, 41);
+        jLabel1.setBounds(230, 50, 165, 41);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Succesed");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(100, 120, 110, 26);
+        jLabel2.setBounds(250, 90, 120, 26);
 
         jLabel3.setForeground(new java.awt.Color(250, 208, 44));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Rent the car of your dream with home delivery");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(-20, 160, 359, 16);
+        jLabel3.setBounds(150, 120, 359, 16);
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("More Information");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(100, 190, 110, 17);
+        jLabel4.setBounds(260, 150, 110, 17);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("+62 812 3456789");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(100, 210, 110, 17);
+        jLabel5.setBounds(260, 170, 110, 17);
 
         jButton1.setBackground(new java.awt.Color(250, 208, 44));
         jButton1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
@@ -82,7 +82,7 @@ public class lastPages extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(30, 300, 99, 23);
+        jButton1.setBounds(140, 430, 110, 30);
 
         jButton2.setBackground(new java.awt.Color(250, 208, 44));
         jButton2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
@@ -93,21 +93,21 @@ public class lastPages extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(180, 300, 99, 23);
+        jButton2.setBounds(400, 430, 110, 30);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (11).png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (13).png")); // NOI18N
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(0, 0, 300, 450);
+        jLabel6.setBounds(0, 0, 600, 500);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 499, Short.MAX_VALUE)
         );
 
         pack();

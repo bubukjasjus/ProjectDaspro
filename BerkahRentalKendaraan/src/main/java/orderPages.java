@@ -34,7 +34,7 @@ public class orderPages extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
 
@@ -52,30 +52,35 @@ public class orderPages extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jComboBox1);
-        jComboBox1.setBounds(180, 90, 100, 23);
+        jComboBox1.setBounds(390, 100, 150, 30);
 
         jComboBox2.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jComboBox2.setForeground(new java.awt.Color(71, 20, 25));
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Durasi", "12 jam", "1 hari", "2 hari", "3 hari" }));
         jPanel1.add(jComboBox2);
-        jComboBox2.setBounds(180, 170, 100, 23);
+        jComboBox2.setBounds(390, 200, 150, 30);
 
         jComboBox3.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jComboBox3.setForeground(new java.awt.Color(71, 20, 25));
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Jumlah", "1", "2", "3", "4", "5" }));
         jPanel1.add(jComboBox3);
-        jComboBox3.setBounds(180, 130, 100, 23);
+        jComboBox3.setBounds(390, 150, 150, 30);
 
         jTextField1.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(254, 187, 77));
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jTextField1);
-        jTextField1.setBounds(180, 310, 100, 23);
+        jTextField1.setBounds(390, 353, 150, 30);
 
         jButton1.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(71, 20, 25));
         jButton1.setText("Total");
         jPanel1.add(jButton1);
-        jButton1.setBounds(180, 260, 100, 24);
+        jButton1.setBounds(390, 294, 150, 30);
 
         jButton2.setBackground(new java.awt.Color(71, 20, 25));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -86,28 +91,30 @@ public class orderPages extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(180, 370, 88, 23);
+        jButton2.setBounds(390, 420, 150, 30);
 
-        jLabel3.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("ORDER NOW");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(170, 50, 110, 25);
+        jLabel3.setBounds(300, 30, 270, 50);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (10).png")); // NOI18N
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(0, 0, 300, 450);
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (14).png")); // NOI18N
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(0, 0, 600, 500);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
         );
 
         pack();
@@ -122,6 +129,10 @@ public class orderPages extends javax.swing.JFrame {
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -172,8 +183,8 @@ public class orderPages extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables

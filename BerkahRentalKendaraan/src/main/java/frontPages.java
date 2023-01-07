@@ -32,7 +32,7 @@ public class frontPages extends javax.swing.JFrame {
         txt3 = new javax.swing.JLabel();
         txt2 = new javax.swing.JLabel();
         txt1 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,47 +50,47 @@ public class frontPages extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btn1);
-        btn1.setBounds(90, 320, 120, 40);
+        btn1.setBounds(440, 390, 120, 40);
 
         txt4.setFont(new java.awt.Font("Microsoft YaHei", 0, 12)); // NOI18N
         txt4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txt4.setText("BERKAH RENT");
         jPanel1.add(txt4);
-        txt4.setBounds(50, 10, 190, 16);
+        txt4.setBounds(210, 20, 190, 16);
 
         txt3.setFont(new java.awt.Font("Microsoft YaHei", 0, 12)); // NOI18N
         txt3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txt3.setText("GET THE BEST VEHICLE RENTAL");
         jPanel1.add(txt3);
-        txt3.setBounds(50, 130, 190, 16);
+        txt3.setBounds(210, 120, 190, 16);
 
         txt2.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
         txt2.setForeground(new java.awt.Color(71, 20, 25));
         txt2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txt2.setText("A VEHICLE?");
         jPanel1.add(txt2);
-        txt2.setBounds(20, 70, 250, 40);
+        txt2.setBounds(140, 70, 330, 60);
 
         txt1.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
         txt1.setForeground(new java.awt.Color(71, 20, 25));
         txt1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txt1.setText("NEED");
         jPanel1.add(txt1);
-        txt1.setBounds(60, 30, 170, 40);
+        txt1.setBounds(220, 40, 170, 40);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Need A VEHICLE.png")); // NOI18N
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 300, 450);
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\loginpages.png")); // NOI18N
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(0, 0, 600, 500);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
         );
 
         pack();
@@ -141,7 +141,7 @@ public class frontPages extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel txt1;
     private javax.swing.JLabel txt2;
