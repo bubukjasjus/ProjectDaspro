@@ -46,7 +46,8 @@ public class frontPages extends javax.swing.JFrame {
         btn1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         btn1.setForeground(new java.awt.Color(204, 204, 204));
         btn1.setText("GET STARTED");
-        btn1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn1.setBorderPainted(false);
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn1ActionPerformed(evt);

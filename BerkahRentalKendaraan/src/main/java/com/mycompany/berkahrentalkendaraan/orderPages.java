@@ -31,7 +31,6 @@ public class orderPages extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         transmisiChoice = new javax.swing.JComboBox<>();
         durationChoice = new javax.swing.JComboBox<>();
-        totalChoice = new javax.swing.JComboBox<>();
         jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -60,13 +59,7 @@ public class orderPages extends javax.swing.JFrame {
         durationChoice.setForeground(new java.awt.Color(71, 20, 25));
         durationChoice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Durasi", "12 jam", "1 hari", "2 hari", "3 hari" }));
         jPanel1.add(durationChoice);
-        durationChoice.setBounds(390, 200, 150, 30);
-
-        totalChoice.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        totalChoice.setForeground(new java.awt.Color(71, 20, 25));
-        totalChoice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Jumlah", "1", "2", "3", "4", "5" }));
-        jPanel1.add(totalChoice);
-        totalChoice.setBounds(390, 150, 150, 30);
+        durationChoice.setBounds(390, 150, 150, 30);
 
         jTextField1.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(254, 187, 77));
@@ -188,7 +181,6 @@ public class orderPages extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JComboBox<String> totalChoice;
     private javax.swing.JComboBox<String> transmisiChoice;
     // End of variables declaration//GEN-END:variables
 }
