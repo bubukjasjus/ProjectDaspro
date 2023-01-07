@@ -78,7 +78,7 @@ public class frontPages extends javax.swing.JFrame {
         jPanel1.add(txt1);
         txt1.setBounds(60, 30, 170, 40);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\ESQ BS\\Kuliah\\Dasar Pemograman\\netbeans\\ProjectDaspro\\BerkahRentalKendaraan\\src\\main\\java\\Need A VEHICLE.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Need A VEHICLE.png")); // NOI18N
         jPanel1.add(jLabel2);
         jLabel2.setBounds(0, 0, 300, 450);
 
