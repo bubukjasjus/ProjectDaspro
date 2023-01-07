@@ -27,14 +27,12 @@ public class orderPages extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jComboBox2 = new javax.swing.JComboBox<>();
         jComboBox3 = new javax.swing.JComboBox<>();
         jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
@@ -45,45 +43,43 @@ public class orderPages extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("RENT");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(170, 300, 100, 25);
-
         jComboBox1.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jComboBox1.setForeground(new java.awt.Color(71, 20, 25));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mobil", "Manual", "Matic" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Transmisi", "Manual", "Matic" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jComboBox1);
-        jComboBox1.setBounds(180, 90, 88, 23);
+        jComboBox1.setBounds(180, 90, 100, 23);
 
         jComboBox2.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jComboBox2.setForeground(new java.awt.Color(71, 20, 25));
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Durasi", "12 jam", "1 hari", "2 hari", "3 hari" }));
         jPanel1.add(jComboBox2);
-        jComboBox2.setBounds(180, 170, 88, 23);
+        jComboBox2.setBounds(180, 170, 100, 23);
 
         jComboBox3.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jComboBox3.setForeground(new java.awt.Color(71, 20, 25));
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Jumlah", "1", "2", "3", "4", "5", " " }));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Jumlah", "1", "2", "3", "4", "5" }));
         jPanel1.add(jComboBox3);
-        jComboBox3.setBounds(180, 130, 88, 23);
+        jComboBox3.setBounds(180, 130, 100, 23);
 
         jTextField1.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(254, 187, 77));
         jPanel1.add(jTextField1);
-        jTextField1.setBounds(180, 210, 88, 23);
+        jTextField1.setBounds(180, 310, 100, 23);
 
         jButton1.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(71, 20, 25));
         jButton1.setText("Total");
         jPanel1.add(jButton1);
-        jButton1.setBounds(180, 250, 88, 24);
+        jButton1.setBounds(180, 260, 100, 24);
 
         jButton2.setBackground(new java.awt.Color(71, 20, 25));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Book Now");
+        jButton2.setText("Next");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -91,14 +87,6 @@ public class orderPages extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2);
         jButton2.setBounds(180, 370, 88, 23);
-
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jTextField2);
-        jTextField2.setBounds(180, 330, 90, 22);
 
         jLabel3.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -125,15 +113,15 @@ public class orderPages extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         this.setVisible(false);
         lastPages button = new lastPages();
         button.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -184,11 +172,9 @@ public class orderPages extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
