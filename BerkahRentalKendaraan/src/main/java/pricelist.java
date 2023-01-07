@@ -52,7 +52,6 @@ public class pricelist extends javax.swing.JFrame {
         lbl21 = new javax.swing.JLabel();
         lbl22 = new javax.swing.JLabel();
         nextButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
 
         lbl1.setBackground(new java.awt.Color(204, 204, 204));
         lbl1.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
@@ -236,21 +235,21 @@ public class pricelist extends javax.swing.JFrame {
             }
         });
         jPanel1.add(nextButton1);
-        nextButton1.setBounds(200, 340, 72, 23);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\ESQ BS\\Kuliah\\Dasar Pemograman\\netbeans\\ProjectDaspro\\BerkahRentalKendaraan\\src\\main\\java\\3.png")); // NOI18N
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 300, 430);
+        nextButton1.setBounds(100, 330, 130, 60);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(312, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(469, Short.MAX_VALUE))
         );
 
         pack();
@@ -305,7 +304,6 @@ public class pricelist extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lbl1;
     private javax.swing.JLabel lbl10;
