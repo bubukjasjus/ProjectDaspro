@@ -7,12 +7,12 @@
  *
  * @author 62821
  */
-public class LoginPages extends javax.swing.JFrame {
+public class frontPages extends javax.swing.JFrame {
 
     /**
      * Creates new form LoginPages
      */
-    public LoginPages() {
+    public frontPages() {
         initComponents();
         txt4.setBackground(new java.awt.Color(0,0,0,1));
     }
@@ -98,7 +98,7 @@ public class LoginPages extends javax.swing.JFrame {
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
         this.setVisible(false);
-        PAGES2 button = new PAGES2();
+        Login button = new Login();
         button.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_btn1ActionPerformed
@@ -120,20 +120,21 @@ public class LoginPages extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LoginPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frontPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LoginPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frontPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LoginPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frontPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LoginPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frontPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LoginPages().setVisible(true);
+                new frontPages().setVisible(true);
             }
         });
     }

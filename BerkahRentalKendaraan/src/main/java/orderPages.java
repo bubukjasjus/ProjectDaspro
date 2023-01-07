@@ -7,12 +7,12 @@
  *
  * @author 62821
  */
-public class pages4 extends javax.swing.JFrame {
+public class orderPages extends javax.swing.JFrame {
 
     /**
      * Creates new form pages3
      */
-    public pages4() {
+    public orderPages() {
         initComponents();
     }
 
@@ -50,36 +50,36 @@ public class pages4 extends javax.swing.JFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("RENT");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(180, 300, 100, 25);
+        jLabel2.setBounds(170, 300, 100, 25);
 
         jComboBox1.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jComboBox1.setForeground(new java.awt.Color(71, 20, 25));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mobil", "Manual", "Matic" }));
         jPanel1.add(jComboBox1);
-        jComboBox1.setBounds(190, 90, 88, 23);
+        jComboBox1.setBounds(180, 90, 88, 23);
 
         jComboBox2.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jComboBox2.setForeground(new java.awt.Color(71, 20, 25));
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Durasi", "12 jam", "1 hari", "2 hari", "3 hari" }));
         jPanel1.add(jComboBox2);
-        jComboBox2.setBounds(190, 170, 88, 23);
+        jComboBox2.setBounds(180, 170, 88, 23);
 
         jComboBox3.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jComboBox3.setForeground(new java.awt.Color(71, 20, 25));
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Jumlah", "1", "2", "3", "4", "5", " " }));
         jPanel1.add(jComboBox3);
-        jComboBox3.setBounds(190, 130, 88, 23);
+        jComboBox3.setBounds(180, 130, 88, 23);
 
         jTextField1.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(254, 187, 77));
         jPanel1.add(jTextField1);
-        jTextField1.setBounds(190, 210, 88, 23);
+        jTextField1.setBounds(180, 210, 88, 23);
 
         jButton1.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(71, 20, 25));
         jButton1.setText("Total");
         jPanel1.add(jButton1);
-        jButton1.setBounds(190, 250, 88, 24);
+        jButton1.setBounds(180, 250, 88, 24);
 
         jButton2.setBackground(new java.awt.Color(71, 20, 25));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -90,7 +90,7 @@ public class pages4 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(190, 370, 88, 23);
+        jButton2.setBounds(180, 370, 88, 23);
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,14 +98,14 @@ public class pages4 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField2);
-        jTextField2.setBounds(190, 330, 90, 22);
+        jTextField2.setBounds(180, 330, 90, 22);
 
         jLabel3.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("PRICE LIST");
+        jLabel3.setText("ORDER NOW");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(180, 50, 100, 25);
+        jLabel3.setBounds(170, 50, 110, 25);
 
         jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (10).png")); // NOI18N
         jPanel1.add(jLabel4);
@@ -131,7 +131,7 @@ public class pages4 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         this.setVisible(false);
-        pages5 button = new pages5();
+        lastPages button = new lastPages();
         button.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -152,14 +152,18 @@ public class pages4 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(pages4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(orderPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(pages4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(orderPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(pages4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(orderPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(pages4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(orderPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -168,7 +172,7 @@ public class pages4 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new pages4().setVisible(true);
+                new orderPages().setVisible(true);
             }
         });
     }
