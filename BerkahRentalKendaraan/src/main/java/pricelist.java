@@ -154,14 +154,14 @@ public class pricelist extends javax.swing.JFrame {
         lblmanual1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblmanual1.setText("Manual");
         jPanel1.add(lblmanual1);
-        lblmanual1.setBounds(40, 110, 74, 19);
+        lblmanual1.setBounds(40, 100, 74, 19);
 
         lbl14.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         lbl14.setForeground(new java.awt.Color(255, 191, 0));
         lbl14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl14.setText("Matic");
         jPanel1.add(lbl14);
-        lbl14.setBounds(190, 110, 74, 19);
+        lbl14.setBounds(190, 100, 74, 19);
 
         lbl15.setBackground(new java.awt.Color(204, 204, 204));
         lbl15.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
@@ -169,7 +169,7 @@ public class pricelist extends javax.swing.JFrame {
         lbl15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl15.setText("12 Hours : Rp 500.000 ");
         jPanel1.add(lbl15);
-        lbl15.setBounds(20, 160, 120, 16);
+        lbl15.setBounds(20, 130, 120, 16);
 
         lbl16.setBackground(new java.awt.Color(204, 204, 204));
         lbl16.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
@@ -177,7 +177,7 @@ public class pricelist extends javax.swing.JFrame {
         lbl16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl16.setText("12 Hours : Rp 600.000 ");
         jPanel1.add(lbl16);
-        lbl16.setBounds(157, 160, 130, 20);
+        lbl16.setBounds(160, 130, 130, 20);
 
         lbl17.setBackground(new java.awt.Color(204, 204, 204));
         lbl17.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
@@ -185,7 +185,7 @@ public class pricelist extends javax.swing.JFrame {
         lbl17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl17.setText("1 Day : Rp 900.000 ");
         jPanel1.add(lbl17);
-        lbl17.setBounds(20, 190, 120, 16);
+        lbl17.setBounds(20, 170, 120, 16);
 
         lbl18.setBackground(new java.awt.Color(204, 204, 204));
         lbl18.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
@@ -193,7 +193,7 @@ public class pricelist extends javax.swing.JFrame {
         lbl18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl18.setText("1 Day : Rp 1.000.000 ");
         jPanel1.add(lbl18);
-        lbl18.setBounds(160, 190, 120, 16);
+        lbl18.setBounds(160, 170, 120, 16);
 
         lbl19.setBackground(new java.awt.Color(204, 204, 204));
         lbl19.setFont(new java.awt.Font("Dialog", 0, 11)); // NOI18N
@@ -201,7 +201,7 @@ public class pricelist extends javax.swing.JFrame {
         lbl19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl19.setText("2 Day : Rp 1.500.000 ");
         jPanel1.add(lbl19);
-        lbl19.setBounds(20, 220, 120, 16);
+        lbl19.setBounds(20, 210, 120, 16);
 
         lbl20.setBackground(new java.awt.Color(204, 204, 204));
         lbl20.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
@@ -209,7 +209,7 @@ public class pricelist extends javax.swing.JFrame {
         lbl20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl20.setText("2 Day : Rp 1.600.000 ");
         jPanel1.add(lbl20);
-        lbl20.setBounds(160, 220, 120, 16);
+        lbl20.setBounds(160, 210, 120, 16);
 
         lbl21.setBackground(new java.awt.Color(204, 204, 204));
         lbl21.setFont(new java.awt.Font("Dialog", 0, 11)); // NOI18N
@@ -240,17 +240,17 @@ public class pricelist extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon("D:\\ESQ BS\\Kuliah\\Dasar Pemograman\\netbeans\\ProjectDaspro\\BerkahRentalKendaraan\\src\\main\\java\\3.png")); // NOI18N
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 300, 450);
+        jLabel1.setBounds(0, 0, 300, 430);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 301, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
