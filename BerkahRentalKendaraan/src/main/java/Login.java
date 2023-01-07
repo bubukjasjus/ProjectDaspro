@@ -1,4 +1,4 @@
-/*
+import javax.swing.JOptionPane;/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
@@ -7,6 +7,7 @@
  *
  * @author 62821
  */
+
 public class Login extends javax.swing.JFrame {
 
     /**
@@ -14,7 +15,7 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-         txtrent = new javax.swing.JTextField();
+        txtrent = new javax.swing.JTextField();
     }
 
     /**
@@ -30,16 +31,16 @@ public class Login extends javax.swing.JFrame {
         txtrent = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         txtuser1 = new javax.swing.JLabel();
-        nameText = new javax.swing.JTextField();
-        txtuser2 = new javax.swing.JLabel();
-        adressText = new javax.swing.JTextField();
+        addressText = new javax.swing.JTextField();
         txtuser = new javax.swing.JLabel();
         phoneText = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        nextButton = new javax.swing.JButton();
         txtuser3 = new javax.swing.JLabel();
         txtuser4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        nameText = new javax.swing.JTextField();
+        txtuser2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         jLabel2.setText("jLabel2");
@@ -61,49 +62,41 @@ public class Login extends javax.swing.JFrame {
 
         txtuser1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 13)); // NOI18N
         txtuser1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txtuser1.setText("MASUKKAN NAMA ANDA");
+        txtuser1.setText("ALAMAT");
         jPanel1.add(txtuser1);
-        txtuser1.setBounds(380, 170, 161, 18);
+        txtuser1.setBounds(380, 250, 161, 18);
 
-        nameText.addActionListener(new java.awt.event.ActionListener() {
+        addressText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nameTextActionPerformed(evt);
+                addressTextActionPerformed(evt);
             }
         });
-        jPanel1.add(nameText);
-        nameText.setBounds(380, 200, 161, 31);
-
-        txtuser2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 13)); // NOI18N
-        txtuser2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txtuser2.setText("ALAMAT\n");
-        jPanel1.add(txtuser2);
-        txtuser2.setBounds(380, 250, 161, 18);
-
-        adressText.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adressTextActionPerformed(evt);
-            }
-        });
-        jPanel1.add(adressText);
-        adressText.setBounds(380, 280, 158, 31);
+        jPanel1.add(addressText);
+        addressText.setBounds(380, 280, 161, 31);
 
         txtuser.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 13)); // NOI18N
         txtuser.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtuser.setText("NOMOR HP");
         jPanel1.add(txtuser);
-        txtuser.setBounds(380, 340, 161, 18);
-        jPanel1.add(phoneText);
-        phoneText.setBounds(380, 370, 158, 31);
+        txtuser.setBounds(380, 330, 161, 18);
 
-        jButton1.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
-        jButton1.setText("ENTER");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        phoneText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                phoneTextActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1);
-        jButton1.setBounds(410, 440, 100, 27);
+        jPanel1.add(phoneText);
+        phoneText.setBounds(380, 360, 158, 31);
+
+        nextButton.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        nextButton.setText("ENTER");
+        nextButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nextButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(nextButton);
+        nextButton.setBounds(410, 450, 100, 27);
 
         txtuser3.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 28)); // NOI18N
         txtuser3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -124,6 +117,20 @@ public class Login extends javax.swing.JFrame {
         jLabel4.setText("Of Your Dream");
         jPanel1.add(jLabel4);
         jLabel4.setBounds(370, 80, 90, 16);
+
+        nameText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nameTextActionPerformed(evt);
+            }
+        });
+        jPanel1.add(nameText);
+        nameText.setBounds(380, 190, 161, 31);
+
+        txtuser2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 13)); // NOI18N
+        txtuser2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtuser2.setText("MASUKKAN NAMA ANDA");
+        jPanel1.add(txtuser2);
+        txtuser2.setBounds(380, 160, 161, 18);
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (15).png")); // NOI18N
         jPanel1.add(jLabel1);
@@ -147,16 +154,35 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtrentActionPerformed
 
-    private void adressTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adressTextActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_adressTextActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        this.setVisible(false);
-        pricelist button = new pricelist();
-        button.setVisible(true);
-// TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
+
+            if (nameText.getText().equalsIgnoreCase("")) {
+                JOptionPane.showMessageDialog(this, "Silahkan Masukkan Nama Anda!");
+            }
+            else if (addressText.getText().equalsIgnoreCase("")) {
+                JOptionPane.showMessageDialog(this, "Silahkan Masukkan Alamat Anda!");
+            }
+            else if (phoneText.getText().equalsIgnoreCase("")) {
+                JOptionPane.showMessageDialog(this, "Silahkan Masukkan No Telp Anda!");
+            }
+        
+        else {
+            pricelist button = new pricelist();
+            button.setVisible(true);
+            button.setLocationRelativeTo(null);
+            this.setVisible(false);        
+        }
+        
+    }//GEN-LAST:event_nextButtonActionPerformed
+
+    private void addressTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addressTextActionPerformed
+
+    }//GEN-LAST:event_addressTextActionPerformed
+
+    private void phoneTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_phoneTextActionPerformed
+
+    }//GEN-LAST:event_phoneTextActionPerformed
 
     private void nameTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameTextActionPerformed
         // TODO add your handling code here:
@@ -199,14 +225,14 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField adressText;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JTextField addressText;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField nameText;
+    private javax.swing.JButton nextButton;
     private javax.swing.JTextField phoneText;
     private javax.swing.JTextField txtrent;
     private javax.swing.JLabel txtuser;

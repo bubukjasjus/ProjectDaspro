@@ -27,9 +27,9 @@ public class orderPages extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
+        transmisiChoice = new javax.swing.JComboBox<>();
+        durationChoice = new javax.swing.JComboBox<>();
+        totalChoice = new javax.swing.JComboBox<>();
         jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -43,28 +43,28 @@ public class orderPages extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setLayout(null);
 
-        jComboBox1.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jComboBox1.setForeground(new java.awt.Color(71, 20, 25));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Transmisi", "Manual", "Matic" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        transmisiChoice.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        transmisiChoice.setForeground(new java.awt.Color(71, 20, 25));
+        transmisiChoice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Transmisi", "Manual", "Matic" }));
+        transmisiChoice.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                transmisiChoiceActionPerformed(evt);
             }
         });
-        jPanel1.add(jComboBox1);
-        jComboBox1.setBounds(390, 100, 150, 30);
+        jPanel1.add(transmisiChoice);
+        transmisiChoice.setBounds(390, 100, 150, 30);
 
-        jComboBox2.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jComboBox2.setForeground(new java.awt.Color(71, 20, 25));
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Durasi", "12 jam", "1 hari", "2 hari", "3 hari" }));
-        jPanel1.add(jComboBox2);
-        jComboBox2.setBounds(390, 200, 150, 30);
+        durationChoice.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        durationChoice.setForeground(new java.awt.Color(71, 20, 25));
+        durationChoice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Durasi", "12 jam", "1 hari", "2 hari", "3 hari" }));
+        jPanel1.add(durationChoice);
+        durationChoice.setBounds(390, 200, 150, 30);
 
-        jComboBox3.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jComboBox3.setForeground(new java.awt.Color(71, 20, 25));
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Jumlah", "1", "2", "3", "4", "5" }));
-        jPanel1.add(jComboBox3);
-        jComboBox3.setBounds(390, 150, 150, 30);
+        totalChoice.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        totalChoice.setForeground(new java.awt.Color(71, 20, 25));
+        totalChoice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Jumlah", "1", "2", "3", "4", "5" }));
+        jPanel1.add(totalChoice);
+        totalChoice.setBounds(390, 150, 150, 30);
 
         jTextField1.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(254, 187, 77));
@@ -126,9 +126,9 @@ public class orderPages extends javax.swing.JFrame {
         button.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void transmisiChoiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transmisiChoiceActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_transmisiChoiceActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
@@ -177,15 +177,15 @@ public class orderPages extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> durationChoice;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JComboBox<String> totalChoice;
+    private javax.swing.JComboBox<String> transmisiChoice;
     // End of variables declaration//GEN-END:variables
 }
