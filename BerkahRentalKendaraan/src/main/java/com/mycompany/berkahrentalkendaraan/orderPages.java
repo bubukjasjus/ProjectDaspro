@@ -1,3 +1,5 @@
+package com.mycompany.berkahrentalkendaraan;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -122,8 +124,9 @@ public class orderPages extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         this.setVisible(false);
-        lastPages button = new lastPages();
-        button.setVisible(true);        // TODO add your handling code here:
+        orderResult button = new orderResult();
+        button.setVisible(true);        
+       // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void transmisiChoiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transmisiChoiceActionPerformed

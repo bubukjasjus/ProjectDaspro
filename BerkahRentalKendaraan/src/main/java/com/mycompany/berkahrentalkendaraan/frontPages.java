@@ -1,3 +1,5 @@
+package com.mycompany.berkahrentalkendaraan;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -44,6 +46,7 @@ public class frontPages extends javax.swing.JFrame {
         btn1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         btn1.setForeground(new java.awt.Color(204, 204, 204));
         btn1.setText("GET STARTED");
+        btn1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn1ActionPerformed(evt);

@@ -1,3 +1,5 @@
+package com.mycompany.berkahrentalkendaraan;
+
 import javax.swing.JOptionPane;/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -112,7 +114,7 @@ public class Login extends javax.swing.JFrame {
 
         jLabel3.setText("Rent The Vehicle ");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(470, 50, 100, 16);
+        jLabel3.setBounds(470, 50, 120, 16);
 
         jLabel4.setText("Of Your Dream");
         jPanel1.add(jLabel4);
