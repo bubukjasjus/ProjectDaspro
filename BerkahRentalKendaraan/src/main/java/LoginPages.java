@@ -14,9 +14,7 @@ public class LoginPages extends javax.swing.JFrame {
      */
     public LoginPages() {
         initComponents();
-        txt1.setBackground(new java.awt.Color(0,0,0,1));
-          txt2.setBackground(new java.awt.Color(0,0,0,1));
-        txt3.setBackground(new java.awt.Color(0,0,0,1));
+        txt4.setBackground(new java.awt.Color(0,0,0,1));
     }
 
     /**
@@ -30,19 +28,21 @@ public class LoginPages extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         btn1 = new javax.swing.JButton();
-        txt1 = new javax.swing.JTextField();
-        txt3 = new javax.swing.JTextField();
-        txt2 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        txt4 = new javax.swing.JLabel();
+        txt3 = new javax.swing.JLabel();
+        txt2 = new javax.swing.JLabel();
+        txt1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setToolTipText("");
+        jPanel1.setEnabled(false);
         jPanel1.setLayout(null);
 
-        btn1.setBackground(new java.awt.Color(245, 155, 18));
+        btn1.setBackground(new java.awt.Color(0, 0, 0));
         btn1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        btn1.setForeground(new java.awt.Color(77, 49, 6));
+        btn1.setForeground(new java.awt.Color(204, 204, 204));
         btn1.setText("GET STARTED");
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -50,51 +50,56 @@ public class LoginPages extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btn1);
-        btn1.setBounds(300, 280, 150, 50);
+        btn1.setBounds(90, 320, 120, 40);
 
-        txt1.setFont(new java.awt.Font("Serif", 1, 48)); // NOI18N
-        txt1.setText("Berkah");
-        txt1.setBorder(null);
-        jPanel1.add(txt1);
-        txt1.setBounds(40, 40, 180, 50);
+        txt4.setFont(new java.awt.Font("Microsoft YaHei", 0, 12)); // NOI18N
+        txt4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txt4.setText("BERKAH RENT");
+        jPanel1.add(txt4);
+        txt4.setBounds(50, 10, 190, 16);
 
-        txt3.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
-        txt3.setText("best vehicle for your trip");
-        txt3.setBorder(null);
+        txt3.setFont(new java.awt.Font("Microsoft YaHei", 0, 12)); // NOI18N
+        txt3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txt3.setText("GET THE BEST VEHICLE RENTAL");
         jPanel1.add(txt3);
-        txt3.setBounds(50, 130, 280, 32);
+        txt3.setBounds(50, 130, 190, 16);
 
-        txt2.setFont(new java.awt.Font("Serif", 1, 48)); // NOI18N
-        txt2.setText("Rent");
-        txt2.setBorder(null);
+        txt2.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
+        txt2.setForeground(new java.awt.Color(71, 20, 25));
+        txt2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txt2.setText("A VEHICLE?");
         jPanel1.add(txt2);
-        txt2.setBounds(40, 90, 140, 40);
+        txt2.setBounds(20, 70, 250, 40);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\GET STARTED (2).png")); // NOI18N
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 450, 500);
+        txt1.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
+        txt1.setForeground(new java.awt.Color(71, 20, 25));
+        txt1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txt1.setText("NEED");
+        jPanel1.add(txt1);
+        txt1.setBounds(60, 30, 170, 40);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\ESQ BS\\Kuliah\\Dasar Pemograman\\netbeans\\ProjectDaspro\\BerkahRentalKendaraan\\src\\main\\java\\Need A VEHICLE.png")); // NOI18N
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(0, 0, 300, 450);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 595, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 726, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        this.setVisible(false);
+        PAGES2 button = new PAGES2();
+        button.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_btn1ActionPerformed
 
@@ -135,10 +140,11 @@ public class LoginPages extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField txt1;
-    private javax.swing.JTextField txt2;
-    private javax.swing.JTextField txt3;
+    private javax.swing.JLabel txt1;
+    private javax.swing.JLabel txt2;
+    private javax.swing.JLabel txt3;
+    private javax.swing.JLabel txt4;
     // End of variables declaration//GEN-END:variables
 }
