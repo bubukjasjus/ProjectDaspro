@@ -151,9 +151,9 @@ public class orderPages extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Silahkan Pilih Transmisinya!");
         }
         else {
-           this.setVisible(false);
-           orderResult next = new orderResult();
-           next.setVisible(true);
+        this.setVisible(false);
+        Login back = new Login();
+        back.setVisible(true);
         }
 
        
@@ -182,8 +182,8 @@ public class orderPages extends javax.swing.JFrame {
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         this.setVisible(false);
-        pricelist button = new pricelist();
-        button.setVisible(true);        // TODO add your handling code here:
+        pricelist back = new pricelist();
+        back.setVisible(true);
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void durationSelectionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_durationSelectionActionPerformed
