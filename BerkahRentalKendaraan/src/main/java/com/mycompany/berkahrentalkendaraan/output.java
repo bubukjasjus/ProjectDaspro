@@ -13,6 +13,7 @@ public class output extends javax.swing.JFrame {
     /**
      * Creates new form NewJFrame
      */
+
     public output() {
         initComponents();
     }
@@ -47,7 +48,7 @@ public class output extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -169,9 +170,9 @@ public class output extends javax.swing.JFrame {
         jPanel1.add(jLabel15);
         jLabel15.setBounds(340, 350, 120, 30);
 
-        jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (16).png")); // NOI18N
-        jPanel1.add(jLabel13);
-        jLabel13.setBounds(0, 0, 600, 500);
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/berkahrentalkendaraan/Untitled design (16).png"))); // NOI18N
+        jPanel1.add(jLabel16);
+        jLabel16.setBounds(0, 0, 600, 500);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -236,9 +237,9 @@ public class output extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

@@ -34,12 +34,11 @@ public class orderPages extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         transmisiSelection = new javax.swing.JComboBox<>();
         durationSelection = new javax.swing.JComboBox<>();
-        hargaSementara = new javax.swing.JTextField();
         nextButton = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         backButton = new javax.swing.JButton();
         finalHarga = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
 
@@ -57,7 +56,7 @@ public class orderPages extends javax.swing.JFrame {
             }
         });
         jPanel1.add(transmisiSelection);
-        transmisiSelection.setBounds(390, 280, 150, 30);
+        transmisiSelection.setBounds(390, 160, 150, 30);
 
         durationSelection.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         durationSelection.setForeground(new java.awt.Color(71, 20, 25));
@@ -69,15 +68,6 @@ public class orderPages extends javax.swing.JFrame {
         });
         jPanel1.add(durationSelection);
         durationSelection.setBounds(390, 110, 150, 30);
-
-        hargaSementara.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        hargaSementara.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hargaSementaraActionPerformed(evt);
-            }
-        });
-        jPanel1.add(hargaSementara);
-        hargaSementara.setBounds(390, 160, 150, 30);
 
         nextButton.setBackground(new java.awt.Color(71, 20, 25));
         nextButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -117,9 +107,9 @@ public class orderPages extends javax.swing.JFrame {
         jPanel1.add(finalHarga);
         finalHarga.setBounds(390, 330, 150, 30);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (14).png")); // NOI18N
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(0, 0, 600, 500);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/berkahrentalkendaraan/Untitled design (14).png"))); // NOI18N
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(0, 0, 600, 500);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -176,10 +166,6 @@ public class orderPages extends javax.swing.JFrame {
 // TODO add your handling code here:
     }//GEN-LAST:event_transmisiSelectionActionPerformed
 
-    private void hargaSementaraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaSementaraActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hargaSementaraActionPerformed
-
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         this.setVisible(false);
         pricelist back = new pricelist();
@@ -189,19 +175,19 @@ public class orderPages extends javax.swing.JFrame {
     private void durationSelectionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_durationSelectionActionPerformed
         
         if (durationSelection.getSelectedItem().toString().equalsIgnoreCase("Durasi")) {
-            hargaSementara.setText ("Pilih Durasinya");
+            finalHarga.setText ("Pilih Durasinya");
         }
         else if (durationSelection.getSelectedItem().toString().equalsIgnoreCase("12 Jam")) {
-            hargaSementara.setText ("Rp. 500.000 ,-"); harga = 500000; 
+            finalHarga.setText ("Rp. 500.000 ,-"); harga = 500000; 
         }
         else if (durationSelection.getSelectedItem().toString().equalsIgnoreCase("1 Hari")) {
-            hargaSementara.setText ("Rp. 900.000 ,-"); harga = 900000; 
+            finalHarga.setText ("Rp. 900.000 ,-"); harga = 900000; 
         }
         else if (durationSelection.getSelectedItem().toString().equalsIgnoreCase("2 Hari")) {
-            hargaSementara.setText ("Rp. 1.500.000 ,-"); harga = 1500000; 
+            finalHarga.setText ("Rp. 1.500.000 ,-"); harga = 1500000; 
         }
         else if (durationSelection.getSelectedItem().toString().equalsIgnoreCase("3 Hari")) {
-            hargaSementara.setText ("Rp. 2.250.000 ,-"); harga = 2250000; 
+            finalHarga.setText ("Rp. 2.250.000 ,-"); harga = 2250000; 
         }
     }//GEN-LAST:event_durationSelectionActionPerformed
 
@@ -255,10 +241,9 @@ public class orderPages extends javax.swing.JFrame {
     private javax.swing.JButton backButton;
     private javax.swing.JComboBox<String> durationSelection;
     private javax.swing.JTextField finalHarga;
-    private javax.swing.JTextField hargaSementara;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton nextButton;
     private javax.swing.JComboBox<String> transmisiSelection;
