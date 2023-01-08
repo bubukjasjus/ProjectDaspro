@@ -1,4 +1,5 @@
 package com.mycompany.berkahrentalkendaraan;
+import javax.swing.JOptionPane;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -11,6 +12,8 @@ package com.mycompany.berkahrentalkendaraan;
  */
 public class orderPages extends javax.swing.JFrame {
 
+    int harga;
+    int totalHarga;
     /**
      * Creates new form pages3
      */
@@ -29,12 +32,13 @@ public class orderPages extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        transmisiChoice = new javax.swing.JComboBox<>();
-        durationChoice = new javax.swing.JComboBox<>();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        transmisiSelection = new javax.swing.JComboBox<>();
+        durationSelection = new javax.swing.JComboBox<>();
+        hargaSementara = new javax.swing.JTextField();
+        nextButton = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        backButton = new javax.swing.JButton();
+        finalHarga = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
@@ -44,49 +48,47 @@ public class orderPages extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setLayout(null);
 
-        transmisiChoice.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        transmisiChoice.setForeground(new java.awt.Color(71, 20, 25));
-        transmisiChoice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Transmisi", "Manual", "Matic" }));
-        transmisiChoice.addActionListener(new java.awt.event.ActionListener() {
+        transmisiSelection.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        transmisiSelection.setForeground(new java.awt.Color(71, 20, 25));
+        transmisiSelection.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Transmisi", "Manual", "Matic" }));
+        transmisiSelection.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transmisiChoiceActionPerformed(evt);
+                transmisiSelectionActionPerformed(evt);
             }
         });
-        jPanel1.add(transmisiChoice);
-        transmisiChoice.setBounds(390, 100, 150, 30);
+        jPanel1.add(transmisiSelection);
+        transmisiSelection.setBounds(390, 280, 150, 30);
 
-        durationChoice.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        durationChoice.setForeground(new java.awt.Color(71, 20, 25));
-        durationChoice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Durasi", "12 jam", "1 hari", "2 hari", "3 hari" }));
-        jPanel1.add(durationChoice);
-        durationChoice.setBounds(390, 150, 150, 30);
-
-        jTextField1.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(254, 187, 77));
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        durationSelection.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        durationSelection.setForeground(new java.awt.Color(71, 20, 25));
+        durationSelection.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Durasi", "12 Jam", "1 Hari", "2 Hari", "3 Hari" }));
+        durationSelection.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                durationSelectionActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1);
-        jTextField1.setBounds(390, 353, 150, 30);
+        jPanel1.add(durationSelection);
+        durationSelection.setBounds(390, 110, 150, 30);
 
-        jButton1.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(71, 20, 25));
-        jButton1.setText("Total");
-        jPanel1.add(jButton1);
-        jButton1.setBounds(390, 294, 150, 30);
-
-        jButton2.setBackground(new java.awt.Color(71, 20, 25));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Next");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        hargaSementara.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        hargaSementara.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                hargaSementaraActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2);
-        jButton2.setBounds(390, 420, 150, 30);
+        jPanel1.add(hargaSementara);
+        hargaSementara.setBounds(390, 160, 150, 30);
+
+        nextButton.setBackground(new java.awt.Color(71, 20, 25));
+        nextButton.setForeground(new java.awt.Color(255, 255, 255));
+        nextButton.setText("Next");
+        nextButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nextButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(nextButton);
+        nextButton.setBounds(480, 420, 90, 30);
 
         jLabel3.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -94,6 +96,26 @@ public class orderPages extends javax.swing.JFrame {
         jLabel3.setText("ORDER NOW");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(300, 30, 270, 50);
+
+        backButton.setBackground(new java.awt.Color(71, 20, 25));
+        backButton.setForeground(new java.awt.Color(255, 255, 255));
+        backButton.setText("Back");
+        backButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(backButton);
+        backButton.setBounds(370, 420, 90, 30);
+
+        finalHarga.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        finalHarga.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                finalHargaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(finalHarga);
+        finalHarga.setBounds(390, 330, 150, 30);
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (14).png")); // NOI18N
         jPanel1.add(jLabel2);
@@ -115,20 +137,62 @@ public class orderPages extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        this.setVisible(false);
+    private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
         orderResult button = new orderResult();
-        button.setVisible(true);        
+        button.setVisible(true);
+        this.setVisible(false); 
+       
        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_nextButtonActionPerformed
 
-    private void transmisiChoiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transmisiChoiceActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_transmisiChoiceActionPerformed
+    private void transmisiSelectionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transmisiSelectionActionPerformed
+        if (transmisiSelection.getSelectedItem().toString().equalsIgnoreCase("Transmisi")) {
+            finalHarga.setText("Silahkan Pilih Transmisinya!");
+        }
+        else if (transmisiSelection.getSelectedItem().toString().equalsIgnoreCase("Manual")) {
+            harga += 0;
+            finalHarga.setText("Rp. "+ harga + " ,-");
+        }
+        else if (transmisiSelection.getSelectedItem().toString().equalsIgnoreCase("Matic")) {
+            harga += 100000;
+            finalHarga.setText("Rp. " + harga + " ,-");
+        }
+        
+// TODO add your handling code here:
+    }//GEN-LAST:event_transmisiSelectionActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void hargaSementaraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaSementaraActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_hargaSementaraActionPerformed
+
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+        this.setVisible(false);
+        pricelist button = new pricelist();
+        button.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_backButtonActionPerformed
+
+    private void durationSelectionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_durationSelectionActionPerformed
+        
+        if (durationSelection.getSelectedItem().toString().equalsIgnoreCase("Durasi")) {
+            hargaSementara.setText ("Pilih Durasinya");
+        }
+        else if (durationSelection.getSelectedItem().toString().equalsIgnoreCase("12 Jam")) {
+            hargaSementara.setText ("Rp. 500.000 ,-"); harga = 500000; 
+        }
+        else if (durationSelection.getSelectedItem().toString().equalsIgnoreCase("1 Hari")) {
+            hargaSementara.setText ("Rp. 900.000 ,-"); harga = 900000; 
+        }
+        else if (durationSelection.getSelectedItem().toString().equalsIgnoreCase("2 Hari")) {
+            hargaSementara.setText ("Rp. 1.500.000 ,-"); harga = 1500000; 
+        }
+        else if (durationSelection.getSelectedItem().toString().equalsIgnoreCase("3 Hari")) {
+            hargaSementara.setText ("Rp. 2.250.000 ,-"); harga = 2250000; 
+        }
+    }//GEN-LAST:event_durationSelectionActionPerformed
+
+    private void finalHargaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalHargaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_finalHargaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -173,14 +237,15 @@ public class orderPages extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> durationChoice;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton backButton;
+    private javax.swing.JComboBox<String> durationSelection;
+    private javax.swing.JTextField finalHarga;
+    private javax.swing.JTextField hargaSementara;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JComboBox<String> transmisiChoice;
+    private javax.swing.JButton nextButton;
+    private javax.swing.JComboBox<String> transmisiSelection;
     // End of variables declaration//GEN-END:variables
 }
