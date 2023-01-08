@@ -138,9 +138,24 @@ public class orderPages extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
-        orderResult button = new orderResult();
-        button.setVisible(true);
-        this.setVisible(false); 
+        if (durationSelection.getSelectedItem().toString().equals("Durasi") && transmisiSelection.getSelectedItem().toString().equals("Transmisi")){
+            this.setVisible(true);
+            JOptionPane.showMessageDialog(null, "Silahkan Pilih Durasi & Transmisinya!");
+        }
+        else if (durationSelection.getSelectedItem().toString().equals("Durasi")) {
+            this.setVisible(true);
+            JOptionPane.showMessageDialog(null, "Silahkan Pilih Durasinya!");
+        }
+        else if (transmisiSelection.getSelectedItem().toString().equals("Transmisi")) {
+            this.setVisible(true);
+            JOptionPane.showMessageDialog(null, "Silahkan Pilih Transmisinya!");
+        }
+        else {
+           this.setVisible(false);
+           orderResult next = new orderResult();
+           next.setVisible(true);
+        }
+
        
        // TODO add your handling code here:
     }//GEN-LAST:event_nextButtonActionPerformed
