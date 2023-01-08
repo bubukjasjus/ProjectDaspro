@@ -152,7 +152,7 @@ public class orderPages extends javax.swing.JFrame {
         }
         else {
         this.setVisible(false);
-        NewJFrame back = new NewJFrame();
+        output back = new output();
         back.setVisible(true);
         }
 
