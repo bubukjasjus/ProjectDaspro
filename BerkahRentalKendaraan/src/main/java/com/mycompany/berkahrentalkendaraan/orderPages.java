@@ -38,7 +38,7 @@ public class orderPages extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         backButton = new javax.swing.JButton();
         finalHarga = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
 
@@ -107,9 +107,9 @@ public class orderPages extends javax.swing.JFrame {
         jPanel1.add(finalHarga);
         finalHarga.setBounds(390, 330, 150, 30);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/berkahrentalkendaraan/Untitled design (14).png"))); // NOI18N
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(0, 0, 600, 500);
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (14).png")); // NOI18N
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(0, 0, 600, 500);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -242,8 +242,8 @@ public class orderPages extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> durationSelection;
     private javax.swing.JTextField finalHarga;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton nextButton;
     private javax.swing.JComboBox<String> transmisiSelection;
