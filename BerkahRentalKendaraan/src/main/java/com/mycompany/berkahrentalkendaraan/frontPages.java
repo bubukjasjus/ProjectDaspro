@@ -34,7 +34,7 @@ public class frontPages extends javax.swing.JFrame {
         txt3 = new javax.swing.JLabel();
         txt2 = new javax.swing.JLabel();
         txt1 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -82,9 +82,9 @@ public class frontPages extends javax.swing.JFrame {
         jPanel1.add(txt1);
         txt1.setBounds(220, 40, 170, 40);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/berkahrentalkendaraan/loginpages.png"))); // NOI18N
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 600, 500);
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\loginpages.png")); // NOI18N
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(0, 0, 600, 500);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -145,7 +145,7 @@ public class frontPages extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel txt1;
     private javax.swing.JLabel txt2;
