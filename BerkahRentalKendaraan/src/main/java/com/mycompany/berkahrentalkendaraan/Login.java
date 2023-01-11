@@ -158,7 +158,9 @@ public class Login extends javax.swing.JFrame {
 
 
     private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
-
+        
+            
+        
             if (nameText.getText().equalsIgnoreCase("")) {
                 JOptionPane.showMessageDialog(this, "Silahkan Masukkan Nama Anda!");
             }
@@ -170,10 +172,15 @@ public class Login extends javax.swing.JFrame {
             }
         
         else {
-            pricelist button = new pricelist();
-            button.setVisible(true);
-            button.setLocationRelativeTo(null);
-            this.setVisible(false);        
+        //pindah hal    
+        pricelist next = new pricelist();
+        next.setVisible(true);
+        next.setLocationRelativeTo(null);
+        this.setVisible(false);
+        // untuk perpindahan text
+        next.numpangNama = nameText.getText();
+        next.numpangAlamat = addressText.getText();
+        next.numpangNoHp = phoneText.getText();        
         }
         
     }//GEN-LAST:event_nextButtonActionPerformed

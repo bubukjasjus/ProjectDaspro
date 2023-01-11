@@ -8,13 +8,13 @@ package com.mycompany.berkahrentalkendaraan;
  *
  * @author 62821
  */
-public class output extends javax.swing.JFrame {
+public class outputPages extends javax.swing.JFrame {
 
     /**
      * Creates new form NewJFrame
      */
 
-    public output() {
+    public outputPages() {
         initComponents();
     }
 
@@ -27,6 +27,7 @@ public class output extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel13 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -37,18 +38,21 @@ public class output extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        finalDuration = new javax.swing.JLabel();
+        finalTransmision = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
+        nextButton = new javax.swing.JButton();
+        totalHarga = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        backButton = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
+
+        jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (16).png")); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -74,15 +78,15 @@ public class output extends javax.swing.JFrame {
 
         yourPhone.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.add(yourPhone);
-        yourPhone.setBounds(210, 170, 210, 30);
+        yourPhone.setBounds(210, 170, 340, 30);
 
         yourName.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.add(yourName);
-        yourName.setBounds(210, 90, 210, 30);
+        yourName.setBounds(210, 90, 340, 30);
 
         yourAddress.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.add(yourAddress);
-        yourAddress.setBounds(210, 130, 210, 30);
+        yourAddress.setBounds(210, 130, 340, 30);
 
         jLabel6.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(204, 204, 204));
@@ -102,13 +106,13 @@ public class output extends javax.swing.JFrame {
         jPanel1.add(jLabel3);
         jLabel3.setBounds(60, 170, 60, 30);
 
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(230, 300, 180, 30);
+        finalDuration.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(finalDuration);
+        finalDuration.setBounds(230, 300, 180, 30);
 
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jLabel9);
-        jLabel9.setBounds(230, 260, 180, 30);
+        finalTransmision.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(finalTransmision);
+        finalTransmision.setBounds(230, 260, 180, 30);
 
         jLabel12.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(204, 204, 204));
@@ -116,22 +120,22 @@ public class output extends javax.swing.JFrame {
         jPanel1.add(jLabel12);
         jLabel12.setBounds(50, 20, 200, 40);
 
-        jButton2.setBackground(new java.awt.Color(153, 153, 153));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Next");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        nextButton.setBackground(new java.awt.Color(153, 153, 153));
+        nextButton.setForeground(new java.awt.Color(255, 255, 255));
+        nextButton.setText("Next");
+        nextButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                nextButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2);
-        jButton2.setBounds(500, 380, 80, 23);
+        jPanel1.add(nextButton);
+        nextButton.setBounds(500, 380, 80, 23);
 
-        jLabel8.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(jLabel8);
-        jLabel8.setBounds(50, 380, 90, 30);
+        totalHarga.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
+        totalHarga.setForeground(new java.awt.Color(204, 204, 204));
+        totalHarga.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(totalHarga);
+        totalHarga.setBounds(50, 380, 90, 30);
 
         jLabel10.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(204, 204, 204));
@@ -170,9 +174,21 @@ public class output extends javax.swing.JFrame {
         jPanel1.add(jLabel15);
         jLabel15.setBounds(340, 350, 120, 30);
 
-        jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (16).png")); // NOI18N
-        jPanel1.add(jLabel13);
-        jLabel13.setBounds(0, 0, 600, 500);
+        backButton.setBackground(new java.awt.Color(153, 153, 153));
+        backButton.setForeground(new java.awt.Color(255, 255, 255));
+        backButton.setText("Back");
+        backButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(backButton);
+        backButton.setBounds(60, 450, 80, 23);
+
+        jLabel16.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (16).png")); // NOI18N
+        jLabel16.setToolTipText("");
+        jPanel1.add(jLabel16);
+        jLabel16.setBounds(0, 0, 600, 500);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -188,11 +204,19 @@ public class output extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
         this.setVisible(false);
         lastPages button = new lastPages();
-        button.setVisible(true);          // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+        button.setVisible(true);          
+// TODO add your handling code here:
+    }//GEN-LAST:event_nextButtonActionPerformed
+
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+        this.setVisible(false);
+        orderPages button = new orderPages();
+        button.setVisible(true);
+// TODO add your handling code here:
+    }//GEN-LAST:event_backButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -211,47 +235,51 @@ public class output extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(output.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(outputPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(output.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(outputPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(output.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(outputPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(output.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(outputPages.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new output().setVisible(true);
+                new outputPages().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton backButton;
+    public javax.swing.JLabel finalDuration;
+    public javax.swing.JLabel finalTransmision;
     private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField3;
-    private javax.swing.JLabel yourAddress;
-    private javax.swing.JLabel yourName;
-    private javax.swing.JLabel yourPhone;
+    private javax.swing.JButton nextButton;
+    public javax.swing.JLabel totalHarga;
+    public javax.swing.JLabel yourAddress;
+    public javax.swing.JLabel yourName;
+    public javax.swing.JLabel yourPhone;
     // End of variables declaration//GEN-END:variables
 }

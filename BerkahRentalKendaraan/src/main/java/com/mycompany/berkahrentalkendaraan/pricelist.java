@@ -14,6 +14,7 @@ public class pricelist extends javax.swing.JFrame {
     /**
      * Creates new form pagess
      */
+    String numpangNama, numpangAlamat, numpangNoHp;
     public pricelist() {
         initComponents();
     }
@@ -54,6 +55,7 @@ public class pricelist extends javax.swing.JFrame {
         lbl21 = new javax.swing.JLabel();
         lbl22 = new javax.swing.JLabel();
         nextButton1 = new javax.swing.JButton();
+        backButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         lbl1.setBackground(new java.awt.Color(204, 204, 204));
@@ -239,7 +241,18 @@ public class pricelist extends javax.swing.JFrame {
             }
         });
         jPanel1.add(nextButton1);
-        nextButton1.setBounds(240, 440, 120, 40);
+        nextButton1.setBounds(390, 420, 120, 40);
+
+        backButton.setBackground(new java.awt.Color(80, 79, 79));
+        backButton.setForeground(new java.awt.Color(255, 191, 0));
+        backButton.setText("Back");
+        backButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(backButton);
+        backButton.setBounds(100, 420, 120, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (12).png")); // NOI18N
         jPanel1.add(jLabel1);
@@ -266,10 +279,24 @@ public class pricelist extends javax.swing.JFrame {
     }//GEN-LAST:event_nextButtonActionPerformed
 
     private void nextButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButton1ActionPerformed
+        //transfer variable
+        orderPages next = new orderPages();
+        //numpang biodata pages sebelumnya
+        next.numpangNama = numpangNama;
+        next.numpangAlamat = numpangAlamat;
+        next.numpangNoHp = numpangNoHp;
+        //pindah frame
         this.setVisible(false);
-        orderPages button = new orderPages();
-        button.setVisible(true);
+        next.setVisible(true);
+        next.setLocationRelativeTo(null);
     }//GEN-LAST:event_nextButton1ActionPerformed
+
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+        this.setVisible(false);
+        Login button = new Login();
+        button.setVisible(true);
+// TODO add your handling code here:
+    }//GEN-LAST:event_backButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -310,6 +337,7 @@ public class pricelist extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton backButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lbl1;

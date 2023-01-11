@@ -13,10 +13,8 @@ import javax.swing.JOptionPane;
 public class orderPages extends javax.swing.JFrame {
 
     int harga;
-    int totalHarga;
-    /**
-     * Creates new form pages3
-     */
+    String numpangNama, numpangAlamat, numpangNoHp;
+    
     public orderPages() {
         initComponents();
     }
@@ -31,6 +29,7 @@ public class orderPages extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         transmisiSelection = new javax.swing.JComboBox<>();
         durationSelection = new javax.swing.JComboBox<>();
@@ -38,9 +37,12 @@ public class orderPages extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         backButton = new javax.swing.JButton();
         finalHarga = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (14).png")); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -80,12 +82,12 @@ public class orderPages extends javax.swing.JFrame {
         jPanel1.add(nextButton);
         nextButton.setBounds(480, 420, 90, 30);
 
-        jLabel3.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 36)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("ORDER NOW");
+        jLabel3.setText("Harga :");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(300, 30, 270, 50);
+        jLabel3.setBounds(320, 270, 270, 50);
 
         backButton.setBackground(new java.awt.Color(71, 20, 25));
         backButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -105,19 +107,24 @@ public class orderPages extends javax.swing.JFrame {
             }
         });
         jPanel1.add(finalHarga);
-        finalHarga.setBounds(390, 330, 150, 30);
+        finalHarga.setBounds(380, 330, 150, 30);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (14).png")); // NOI18N
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(0, 0, 600, 500);
+        jLabel4.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("ORDER NOW");
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(300, 30, 270, 50);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (14).png")); // NOI18N
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(0, 0, 600, 500);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -128,6 +135,17 @@ public class orderPages extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
+        // transfer variable 
+        outputPages next = new outputPages();
+        // Numpang Biodata tadi
+        next.yourName.setText(numpangNama);
+        next.yourAddress.setText(numpangAlamat);
+        next.yourPhone.setText(numpangNoHp);
+        //keterangan pemesanan
+        next.finalTransmision.setText(transmisiSelection.getSelectedItem().toString());
+        next.finalDuration.setText(durationSelection.getSelectedItem().toString());
+        next.totalHarga.setText(finalHarga.getText());
+        
         if (durationSelection.getSelectedItem().toString().equals("Durasi") && transmisiSelection.getSelectedItem().toString().equals("Transmisi")){
             this.setVisible(true);
             JOptionPane.showMessageDialog(null, "Silahkan Pilih Durasi & Transmisinya!");
@@ -141,9 +159,10 @@ public class orderPages extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Silahkan Pilih Transmisinya!");
         }
         else {
-        this.setVisible(false);
-        output back = new output();
-        back.setVisible(true);
+        outputPages back = new outputPages();
+            next.setVisible(true);
+            next.setLocationRelativeTo(null);
+            this.setVisible(false);
         }
 
        
@@ -156,7 +175,7 @@ public class orderPages extends javax.swing.JFrame {
         }
         else if (transmisiSelection.getSelectedItem().toString().equalsIgnoreCase("Manual")) {
             harga += 0;
-            finalHarga.setText("Rp. "+ harga + " ,-");
+            finalHarga.setText("Rp. " + harga + " ,-");
         }
         else if (transmisiSelection.getSelectedItem().toString().equalsIgnoreCase("Matic")) {
             harga += 100000;
@@ -178,16 +197,20 @@ public class orderPages extends javax.swing.JFrame {
             finalHarga.setText ("Pilih Durasinya");
         }
         else if (durationSelection.getSelectedItem().toString().equalsIgnoreCase("12 Jam")) {
-            finalHarga.setText ("Rp. 500.000 ,-"); harga = 500000; 
+             harga = 500000; 
+             finalHarga.setText("Rp. " + harga + " ,-");
         }
         else if (durationSelection.getSelectedItem().toString().equalsIgnoreCase("1 Hari")) {
-            finalHarga.setText ("Rp. 900.000 ,-"); harga = 900000; 
+            harga = 900000;
+            finalHarga.setText("Rp. " + harga + " ,-");
         }
         else if (durationSelection.getSelectedItem().toString().equalsIgnoreCase("2 Hari")) {
-            finalHarga.setText ("Rp. 1.500.000 ,-"); harga = 1500000; 
+            harga = 1500000;   
+            finalHarga.setText("Rp. " + harga + " ,-");
         }
         else if (durationSelection.getSelectedItem().toString().equalsIgnoreCase("3 Hari")) {
-            finalHarga.setText ("Rp. 2.250.000 ,-"); harga = 2250000; 
+             harga = 2250000;
+             finalHarga.setText("Rp. " + harga + " ,-");
         }
     }//GEN-LAST:event_durationSelectionActionPerformed
 
@@ -244,6 +267,8 @@ public class orderPages extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton nextButton;
     private javax.swing.JComboBox<String> transmisiSelection;
