@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  */
 public class orderPages extends javax.swing.JFrame {
 
-    int harga;
+    int harga,uangUser,kembalianUser;
     String numpangNama, numpangAlamat, numpangNoHp;
     
     public orderPages() {
@@ -58,7 +58,7 @@ public class orderPages extends javax.swing.JFrame {
             }
         });
         jPanel1.add(transmisiSelection);
-        transmisiSelection.setBounds(390, 160, 150, 30);
+        transmisiSelection.setBounds(390, 110, 150, 30);
 
         durationSelection.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         durationSelection.setForeground(new java.awt.Color(71, 20, 25));
@@ -69,7 +69,7 @@ public class orderPages extends javax.swing.JFrame {
             }
         });
         jPanel1.add(durationSelection);
-        durationSelection.setBounds(390, 110, 150, 30);
+        durationSelection.setBounds(390, 70, 150, 30);
 
         nextButton.setBackground(new java.awt.Color(71, 20, 25));
         nextButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -85,9 +85,9 @@ public class orderPages extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Harga :");
+        jLabel3.setText("TOTAL HARGA:");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(320, 270, 270, 50);
+        jLabel3.setBounds(330, 230, 270, 50);
 
         backButton.setBackground(new java.awt.Color(71, 20, 25));
         backButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -107,16 +107,16 @@ public class orderPages extends javax.swing.JFrame {
             }
         });
         jPanel1.add(finalHarga);
-        finalHarga.setBounds(380, 330, 150, 30);
+        finalHarga.setBounds(390, 280, 150, 30);
 
         jLabel4.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("ORDER NOW");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(300, 30, 270, 50);
+        jLabel4.setBounds(300, 10, 270, 50);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (14).png")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon("D:\\ESQ BS\\Kuliah\\Dasar Pemograman\\netbeans\\New Folder\\ProjectDaspro\\BerkahRentalKendaraan\\src\\main\\java\\com\\mycompany\\berkahrentalkendaraan\\Untitled design (14).png")); // NOI18N
         jPanel1.add(jLabel5);
         jLabel5.setBounds(0, 0, 600, 500);
 

@@ -13,6 +13,9 @@ public class outputPages extends javax.swing.JFrame {
     /**
      * Creates new form NewJFrame
      */
+   
+    int uangPembeli;
+    int uangKembalian;
 
     public outputPages() {
         initComponents();
@@ -43,14 +46,9 @@ public class outputPages extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         nextButton = new javax.swing.JButton();
         totalHarga = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
         backButton = new javax.swing.JButton();
-        jLabel16 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (16).png")); // NOI18N
 
@@ -133,32 +131,8 @@ public class outputPages extends javax.swing.JFrame {
 
         totalHarga.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
         totalHarga.setForeground(new java.awt.Color(204, 204, 204));
-        totalHarga.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel1.add(totalHarga);
-        totalHarga.setBounds(50, 380, 90, 30);
-
-        jLabel10.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(jLabel10);
-        jLabel10.setBounds(340, 380, 120, 30);
-
-        jLabel11.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("Masukkan Duid Anda");
-        jPanel1.add(jLabel11);
-        jLabel11.setBounds(190, 350, 120, 30);
-
-        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jPanel1.add(jTextField3);
-        jTextField3.setBounds(200, 380, 100, 30);
-
-        jButton3.setBackground(new java.awt.Color(235, 168, 67));
-        jButton3.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
-        jButton3.setText("CALCULATE");
-        jPanel1.add(jButton3);
-        jButton3.setBounds(270, 430, 110, 23);
+        totalHarga.setBounds(230, 350, 180, 30);
 
         jLabel14.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(204, 204, 204));
@@ -166,13 +140,6 @@ public class outputPages extends javax.swing.JFrame {
         jLabel14.setText("TOTALNYA :");
         jPanel1.add(jLabel14);
         jLabel14.setBounds(50, 350, 90, 30);
-
-        jLabel15.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel15.setText("KEMBALIAN");
-        jPanel1.add(jLabel15);
-        jLabel15.setBounds(340, 350, 120, 30);
 
         backButton.setBackground(new java.awt.Color(153, 153, 153));
         backButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -185,10 +152,9 @@ public class outputPages extends javax.swing.JFrame {
         jPanel1.add(backButton);
         backButton.setBounds(60, 450, 80, 23);
 
-        jLabel16.setIcon(new javax.swing.ImageIcon("C:\\Users\\62821\\Downloads\\Untitled design (16).png")); // NOI18N
-        jLabel16.setToolTipText("");
-        jPanel1.add(jLabel16);
-        jLabel16.setBounds(0, 0, 600, 500);
+        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\ESQ BS\\Kuliah\\Dasar Pemograman\\netbeans\\New Folder\\ProjectDaspro\\BerkahRentalKendaraan\\src\\main\\java\\com\\mycompany\\berkahrentalkendaraan\\Untitled design (16).png")); // NOI18N
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(0, 0, 600, 500);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -260,14 +226,10 @@ public class outputPages extends javax.swing.JFrame {
     private javax.swing.JButton backButton;
     public javax.swing.JLabel finalDuration;
     public javax.swing.JLabel finalTransmision;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -275,7 +237,6 @@ public class outputPages extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField3;
     private javax.swing.JButton nextButton;
     public javax.swing.JLabel totalHarga;
     public javax.swing.JLabel yourAddress;
